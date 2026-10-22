@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Goldcrest Plumbing &amp; Bathrooms | Plumber &amp; Bathroom Fitter in Preston</title>
+<meta name="description" content="Goldcrest Plumbing & Bathrooms: plumber and bathroom fitter in Preston, covering Blackpool, Darwen, Southport, Ormskirk and everywhere in between. 24/7 emergency call-outs, 4.98 on TrustATrader, free quotes.">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Goldcrest Plumbing &amp; Bathrooms, Preston">
+<meta property="og:description" content="Goldcrest Plumbing & Bathrooms: plumber and bathroom fitter in Preston, covering Blackpool, Darwen, Southport, Ormskirk and everywhere in between. 24/7 emergency call-outs, 4.98 on TrustATrader, free quotes.">
+<meta property="og:image" content="img/pink-grey-bathroom.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+/* Base reset */
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px) }
+body { margin: 0 }
+img { max-width: 100% }
+[hidden] { display: none !important }
+</style>
+<style>
+/* Layout: black-and-gold to match the Goldcrest roundel. Hero (logo with water ripples), service marquee, two arch doorways, statement, Plumbing half, Bathrooms half, reviews, contact. Single dark look by choice, to match the brand. */
+:root {
+  --black: #0a0908;
+  --panel: #131110;
+  --panel-2: #1b1815;
+  --line: #2c2720;
+  --ink: #f4efe4;
+  --muted: #a69e8e;
+  --gold: #f7c753;
+  --gold-hi: #ffe08f;
+  --gold-soft: rgba(247, 199, 83, .32);
+  --cold: #9cc4dc;
+  --leak: #e2654f;
+  --display: "Montserrat", "Century Gothic", "Avenir Next", system-ui, sans-serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ease: cubic-bezier(.2, .7, .1, 1);
+  color-scheme: dark;
+}
+* { box-sizing: border-box }
+html { background: var(--black) }
+body { background: var(--black); color: var(--ink); font: 400 1.0625rem/1.65 var(--body); overflow-x: hidden }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--black) }
+.grain { position: fixed; inset: 0; pointer-events: none; z-index: 50; opacity: .07; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E") }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; font-weight: 400 }
+h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.12; letter-spacing: -.01em; font-weight: 300 }
+h2 b, h1 b { font-weight: 500; color: var(--gold) }
+h3 { font-size: 1.12rem; font-weight: 500; line-height: 1.3 }
+p { margin: 0 }
+a { color: inherit }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px }
+.label { font: 500 .72rem/1.2 var(--display); letter-spacing: .26em; text-transform: uppercase; color: var(--gold) }
+.label.rule { display: inline-flex; align-items: center; gap: 14px }
+.label.rule::before { content: ""; width: 36px; height: 1px; background: var(--gold) }
+
+/* Header */
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(10,9,8,.78); backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); border-bottom: 1px solid transparent; transition: border-color .4s, background .4s }
+header.scrolled { border-bottom-color: var(--line); background: rgba(10,9,8,.92) }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; transition: padding .4s var(--ease) }
+header.scrolled .bar { padding-block: 11px }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font: 400 1.02rem/1 var(--display); letter-spacing: .32em; color: var(--gold) }
+.brand svg { width: 24px; height: 29px; flex: none }
+nav { display: flex; gap: 30px; font: 500 .74rem/1 var(--display); letter-spacing: .18em; text-transform: uppercase }
+nav a { position: relative; text-decoration: none; color: var(--muted); padding-block: 6px; transition: color .3s }
+nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: right; transition: transform .45s var(--ease) }
+nav a:hover { color: var(--ink) }
+nav a:hover::after { transform: scaleX(1); transform-origin: left }
+@media (max-width: 860px) { nav { display: none } }
+
+/* Buttons with gold sheen */
+.btn { position: relative; overflow: hidden; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font: 600 .74rem/1 var(--display); letter-spacing: .18em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--gold); cursor: pointer; background: var(--gold); color: var(--black); transition: transform .4s var(--ease), box-shadow .4s }
+.btn::after { content: ""; position: absolute; inset: -2px; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.55) 50%, transparent 70%); transform: translateX(-120%); transition: transform .9s var(--ease) }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(247,199,83,.6) }
+.btn:hover::after { transform: translateX(120%) }
+.btn .arr { transition: transform .4s var(--ease) }
+.btn:hover .arr { transform: translateX(4px) }
+.btn-line { background: transparent; color: var(--gold) }
+.btn-line::after { background: linear-gradient(110deg, transparent 30%, rgba(247,199,83,.25) 50%, transparent 70%) }
+.bar .btn { padding: 12px 20px; font-size: .7rem; letter-spacing: .14em }
+
+/* Hero */
+.hero { position: relative; overflow: hidden }
+.hero::before { content: ""; position: absolute; right: -10%; top: -20%; width: 70vw; max-width: 900px; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(closest-side, rgba(247,199,83,.10), transparent 70%); pointer-events: none }
+.hero-grid { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding-block: 88px 72px }
+.hero h1 { font-size: clamp(2.6rem, 6.2vw, 5rem); font-weight: 200; line-height: 1.04; letter-spacing: -.02em; margin-top: 26px }
+.hero h1 .ln { display: block; overflow: hidden; padding-bottom: .06em }
+.hero h1 .ln > span { display: inline-block }
+.hero .lead { margin-top: 28px; max-width: 32em; color: var(--muted); font-size: 1.12rem }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px }
+.logo-wrap { position: relative; display: grid; place-items: center; aspect-ratio: 1; max-width: 100%; min-width: 0 }
+.logo-wrap img { position: absolute; z-index: 2; inset: 11%; width: 78%; height: 78%; max-width: none; object-fit: contain }
+.logo-wrap::before { content: ""; position: absolute; inset: -24%; border-radius: 50%; background: radial-gradient(closest-side, rgba(247,199,83,.13), transparent 72%); pointer-events: none }
+.ripple { position: absolute; inset: 11%; border-radius: 50%; border: 1px solid var(--gold); opacity: 0; z-index: 1 }
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; padding-block: 36px 52px; gap: 8px } .logo-wrap { order: -1; width: min(330px, 86%); justify-self: center } }
+
+.trust { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; padding-block: 24px; border-top: 1px solid var(--line); font: 500 .72rem/1.4 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--muted) }
+.trust a { text-decoration: none; color: var(--ink); transition: color .3s }
+.trust a:hover { color: var(--gold) }
+.trust .stars { color: var(--gold); letter-spacing: 3px; margin-right: 10px }
+.trust .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); display: inline-block; vertical-align: 2px; margin-right: 10px }
+
+/* Marquee */
+.marquee { border-block: 1px solid var(--line); overflow: hidden; padding-block: 22px; background: var(--panel) }
+.marquee-track { display: flex; width: max-content }
+.marquee ul { display: flex; gap: 0; margin: 0; padding: 0; list-style: none; flex: none }
+.marquee li { display: flex; align-items: center; font: 300 clamp(1.3rem, 2.6vw, 1.9rem)/1 var(--display); letter-spacing: .04em; color: var(--ink); white-space: nowrap; padding-right: 48px }
+.marquee li::after { content: ""; width: 14px; height: 17px; margin-left: 48px; border: 1.5px solid var(--gold); border-bottom: 0; border-radius: 14px 14px 0 0 }
+
+/* Doorways */
+.doors-sec { padding-block: 104px 40px }
+.doors-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 48px }
+.doors-head h2 { max-width: 15em }
+.doors { display: grid; grid-template-columns: 1fr 1fr; gap: 28px }
+.door { --mx: 50%; --my: 30%; position: relative; display: grid; gap: 14px; align-content: end; justify-items: center; min-height: 500px; padding: 170px 40px 44px; border: 1px solid var(--gold-soft); border-radius: 300px 300px 6px 6px; background: radial-gradient(420px circle at var(--mx) var(--my), rgba(247,199,83,.13), transparent 60%), linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%); text-decoration: none; text-align: center; min-width: 0; overflow: hidden; transition: border-color .5s, transform .6s var(--ease) }
+.door::before { content: ""; position: absolute; inset: 14px 14px auto; height: 70%; border: 1px solid rgba(247,199,83,.12); border-bottom: 0; border-radius: 300px 300px 0 0; pointer-events: none; transition: border-color .5s }
+.door:hover { border-color: var(--gold); transform: translateY(-6px) }
+.door:hover::before { border-color: rgba(247,199,83,.3) }
+.door .arches { position: absolute; top: 48px; left: 50%; width: 104px; height: auto; transform: translateX(-50%); transition: transform .8s var(--ease) }
+.door:hover .arches { transform: translateX(-50%) translateY(-6px) scale(1.05) }
+.door .arches, .draw { stroke-dasharray: 1; stroke-dashoffset: 0 }
+.door h2 { font-size: clamp(1.6rem, 3vw, 2.15rem); font-weight: 400 }
+.door p { color: var(--muted); max-width: 26em }
+.door .go { font: 600 .72rem/1 var(--display); letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-top: 8px; display: inline-flex; gap: 10px }
+.door .go span { transition: transform .4s var(--ease) }
+.door:hover .go span { transform: translateX(5px) }
+@media (max-width: 760px) { .doors { grid-template-columns: 1fr } .door .arches { width: 76px; top: 40px } .door { min-height: 0; padding: 150px 22px 34px; border-radius: 220px 220px 6px 6px } .doors-sec { padding-block: 72px 24px } }
+
+/* Statement */
+.statement { padding-block: 120px }
+.statement .say { font: 200 clamp(1.8rem, 4.6vw, 3.6rem)/1.18 var(--display); letter-spacing: -.015em; max-width: 22em; text-wrap: balance }
+.statement .say b { font-weight: 400; color: var(--gold) }
+.statement .sig { margin-top: 36px }
+@media (max-width: 760px) { .statement { padding-block: 72px } }
+
+/* Halves */
+.half { border-top: 1px solid var(--line) }
+.half-head .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; padding-block: 104px 56px }
+.shot { position: relative; margin: 0; border-radius: 300px 300px 8px 8px; overflow: hidden; border: 1px solid var(--gold-soft); aspect-ratio: 4 / 5; max-width: 100%; background: var(--panel) }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.2s var(--ease) }
+.shot:hover img { transform: scale(1.04) }
+.shot figcaption { position: absolute; left: 16px; right: 16px; bottom: 16px; padding: 10px 14px; border-radius: 6px; background: rgba(10,9,8,.72); backdrop-filter: blur(6px); font: 500 .68rem/1.3 var(--display); letter-spacing: .18em; text-transform: uppercase; color: var(--ink) }
+.half-head .wrap > * { min-width: 0 }
+.half-head .big { font: 200 clamp(2.8rem, 7.2vw, 6.2rem)/.8 var(--display); letter-spacing: -.04em; color: transparent; -webkit-text-stroke: 1px var(--gold-soft); margin-bottom: 18px; user-select: none }
+.half-head h2 { font-size: clamp(2.3rem, 5vw, 3.7rem); font-weight: 200; line-height: 1.06; margin-top: 18px }
+.half-head .lead { margin-top: 22px; color: var(--muted); font-size: 1.1rem; max-width: 32em }
+.half-head .btn { margin-top: 34px }
+@media (max-width: 860px) { .half-head .wrap { grid-template-columns: 1fr; gap: 40px; padding-block: 64px 40px } .shot { border-radius: 220px 220px 8px 8px } }
+
+.spec { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 28px; min-width: 0; box-shadow: 0 40px 80px -40px rgba(0,0,0,.8) }
+.spec::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: linear-gradient(140deg, rgba(247,199,83,.5), transparent 40%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none }
+.spec svg { width: 100%; height: auto; display: block; margin-bottom: 22px }
+.spec dl { display: grid; grid-template-columns: auto 1fr; gap: 0; margin: 0; font-size: .95rem }
+.spec dt, .spec dd { padding-block: 10px; border-top: 1px solid var(--line) }
+.spec dt { color: var(--muted) }
+.spec dd { margin: 0; text-align: right }
+.spec .label { display: flex; justify-content: space-between; margin-bottom: 20px }
+.spec .live { display: inline-flex; align-items: center; gap: 8px; color: var(--muted) }
+.spec .live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold) }
+.flow { fill: none; stroke: rgba(255,255,255,.75); stroke-width: 1.4; stroke-linecap: round; stroke-dasharray: 3 17 }
+
+section.block { padding-block: 72px 104px }
+.head { display: grid; gap: 16px; max-width: 42em; margin-bottom: 48px }
+.head p { color: var(--muted) }
+
+.services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden }
+.svc { position: relative; background: var(--panel); padding: 36px; display: grid; gap: 10px; align-content: start; min-width: 0; transition: background .5s }
+.svc::after { content: ""; position: absolute; left: 0; top: 0; height: 2px; width: 100%; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease) }
+.svc:hover { background: var(--panel-2) }
+.svc:hover::after { transform: scaleX(1) }
+.svc .n { font: 300 .8rem/1 var(--display); letter-spacing: .2em; color: var(--muted) }
+.svc p { color: var(--muted) }
+.svc ul { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 7px; font-size: .98rem }
+.svc li { padding-left: 22px; position: relative }
+.svc li::before { content: ""; position: absolute; left: 0; top: .55em; width: 9px; height: 10px; border: 1px solid var(--gold); border-bottom: 0; border-radius: 9px 9px 0 0 }
+@media (max-width: 720px) { .services { grid-template-columns: 1fr } .svc { padding: 26px } }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 36px; counter-reset: step }
+.steps li { position: relative; counter-increment: step; display: grid; gap: 10px; align-content: start; padding-top: 26px; border-top: 1px solid var(--line); min-width: 0 }
+.steps li::after { content: ""; position: absolute; left: 0; top: -1px; height: 1px; width: 100%; background: var(--gold); transform-origin: left }
+.steps li::before { content: counter(step, decimal-leading-zero); font: 200 2.4rem/1 var(--display); color: var(--gold) }
+.steps p { color: var(--muted); font-size: .98rem }
+@media (max-width: 860px) { .steps { grid-template-columns: 1fr 1fr } }
+@media (max-width: 540px) { .steps { grid-template-columns: 1fr; gap: 32px } }
+
+.faq { max-width: 860px; border-top: 1px solid var(--line) }
+.faq details { border-bottom: 1px solid var(--line) }
+.faq summary { cursor: pointer; padding-block: 24px; font: 400 1.1rem/1.4 var(--display); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color .3s }
+.faq summary:hover { color: var(--gold) }
+.faq summary::-webkit-details-marker { display: none }
+.faq summary i { position: relative; flex: none; width: 30px; height: 30px; border: 1px solid var(--gold-soft); border-radius: 50%; transition: transform .5s var(--ease), border-color .3s }
+.faq summary i::before, .faq summary i::after { content: ""; position: absolute; left: 50%; top: 50%; width: 10px; height: 1px; background: var(--gold); transform: translate(-50%, -50%) }
+.faq summary i::after { transform: translate(-50%, -50%) rotate(90deg); transition: transform .5s var(--ease) }
+.faq details[open] summary i { transform: rotate(180deg); border-color: var(--gold) }
+.faq details[open] summary i::after { transform: translate(-50%, -50%) rotate(0deg) }
+.faq details p { padding-bottom: 24px; color: var(--muted); max-width: 62ch }
+.sub { background: var(--panel) }
+
+/* Reviews */
+.rating { border-top: 1px solid var(--line); position: relative; overflow: hidden }
+.rating .wrap { position: relative; display: grid; grid-template-columns: auto 1fr auto; gap: 32px 64px; align-items: center; padding-block: 104px }
+.score { font: 200 clamp(5rem, 13vw, 9rem)/.85 var(--display); letter-spacing: -.04em; color: var(--gold); font-variant-numeric: tabular-nums; background: linear-gradient(180deg, var(--gold-hi), var(--gold) 60%, #b98d2c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent }
+.score-wrap small { display: block; font: 400 .8rem/1 var(--display); letter-spacing: .2em; color: var(--muted); margin-top: 14px; text-transform: uppercase }
+.rating .stars { display: flex; gap: 6px; margin-top: 16px; color: var(--gold); font-size: 1.3rem }
+.rating p { color: var(--muted); margin-top: 14px; max-width: 34em }
+@media (max-width: 860px) { .rating .wrap { grid-template-columns: 1fr; gap: 24px; padding-block: 72px } }
+
+/* Contact */
+.contact { border-top: 1px solid var(--line); background: var(--panel) }
+.contact-inner { padding-block: 104px; display: grid; gap: 48px }
+.contact h2 { font-size: clamp(2.4rem, 6vw, 4.4rem); font-weight: 200; margin-top: 18px }
+.contact .intro { color: var(--muted); margin-top: 18px; max-width: 34em }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px }
+.co { display: grid; gap: 14px; align-content: start; padding: 32px; border: 1px solid var(--gold-soft); border-radius: 8px; background: var(--black); min-width: 0; transition: border-color .4s, transform .5s var(--ease) }
+.co:hover { border-color: var(--gold); transform: translateY(-3px) }
+.co .what { color: var(--muted); font-size: .95rem; margin-top: -6px }
+.line { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 16px; border-top: 1px solid var(--line); min-width: 0 }
+.line > div { min-width: 0 }
+.line .k { font: 500 .68rem/1 var(--display); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px }
+.line .v { display: block; font: 400 1.25rem/1.3 var(--display); user-select: all; overflow-wrap: anywhere; text-decoration: none }
+.line .v:hover { color: var(--gold) }
+.copy { background: transparent; color: var(--gold); border: 1px solid var(--gold-soft); border-radius: 999px; padding: 9px 18px; font: 600 .68rem/1 var(--display); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; transition: border-color .3s, background .3s }
+.copy:hover { border-color: var(--gold); background: rgba(247,199,83,.08) }
+.hours { font-size: .95rem; color: var(--muted) }
+@media (max-width: 760px) { .cols { grid-template-columns: 1fr } .contact-inner { padding-block: 72px } .co { padding: 24px } }
+
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; padding-block: 30px }
+footer .brand { font-size: .9rem }
+
+/* Our work */
+.work { border-top: 1px solid var(--line) }
+.work > .wrap { padding-block: 104px }
+.ba-row { display: grid; grid-template-columns: 1fr minmax(0, 440px); gap: 56px; align-items: center; margin-bottom: 96px }
+.ba-row > * { min-width: 0 }
+.ba-row .lead { color: var(--muted); margin-top: 18px; max-width: 30em }
+.ba-row ul { margin: 26px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--ink) }
+.ba-row li { padding-left: 22px; position: relative }
+.ba-row li::before { content: ""; position: absolute; left: 0; top: .55em; width: 9px; height: 10px; border: 1px solid var(--gold); border-bottom: 0; border-radius: 9px 9px 0 0 }
+.ba { --pos: 50%; position: relative; width: 100%; aspect-ratio: 787 / 1400; max-width: 100%; margin-inline: auto; border-radius: 8px; overflow: hidden; border: 1px solid var(--gold-soft); user-select: none; touch-action: pan-y }
+.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none }
+.ba .after { clip-path: inset(0 0 0 var(--pos)) }
+.ba .handle { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none }
+.ba .handle::after { content: "‹ ›"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; border-radius: 50%; background: var(--gold); color: var(--black); display: grid; place-items: center; font: 600 1rem/1 var(--display); letter-spacing: .1em; box-shadow: 0 6px 24px rgba(0,0,0,.5) }
+.ba .tag { position: absolute; top: 14px; padding: 7px 12px; border-radius: 999px; background: rgba(10,9,8,.75); font: 600 .64rem/1 var(--display); letter-spacing: .2em; text-transform: uppercase; color: var(--ink); pointer-events: none }
+.ba .tag.b { left: 14px } .ba .tag.a { right: 14px; color: var(--gold) }
+.ba input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0 }
+.ba:has(input:focus-visible) { outline: 2px solid var(--gold); outline-offset: 3px }
+@media (max-width: 860px) { .ba-row { grid-template-columns: 1fr; gap: 32px; margin-bottom: 72px } .ba { width: min(360px, 100%) } }
+.gallery { columns: 3 260px; column-gap: 16px }
+.gallery button { display: block; width: 100%; margin: 0 0 16px; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--panel); cursor: zoom-in; position: relative; break-inside: avoid; transition: border-color .4s }
+.gallery button:hover { border-color: var(--gold) }
+.gallery img { display: block; width: 100%; height: auto; transition: transform 1s var(--ease) }
+.gallery button:hover img { transform: scale(1.04) }
+.gallery span { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 14px; background: linear-gradient(transparent, rgba(10,9,8,.85)); color: var(--ink); text-align: left; font: 500 .66rem/1.35 var(--display); letter-spacing: .16em; text-transform: uppercase; opacity: 0; transform: translateY(6px); transition: opacity .4s, transform .4s var(--ease) }
+.gallery button:hover span, .gallery button:focus-visible span { opacity: 1; transform: none }
+@media (hover: none) { .gallery span { opacity: 1; transform: none } }
+.insta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-top: 28px; color: var(--muted) }
+.insta a.handle-link { color: var(--gold); text-decoration: none; font: 500 1.05rem/1 var(--display); letter-spacing: .04em }
+dialog.lb { width: 100vw; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(6,5,4,.96); color: var(--ink) }
+dialog.lb::backdrop { background: rgba(0,0,0,.8) }
+.lb-inner { position: absolute; inset: 0; display: grid; grid-template-rows: auto 1fr auto; padding: calc(12px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)) }
+.lb-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font: 500 .7rem/1.3 var(--display); letter-spacing: .18em; text-transform: uppercase; color: var(--muted) }
+.lb-stage { display: grid; place-items: center; min-height: 0; padding-block: 12px }
+.lb-stage img { max-width: 100%; max-height: calc(100vh - 150px); max-height: calc(100dvh - 150px); object-fit: contain; border-radius: 6px }
+.lb-nav { display: flex; justify-content: center; gap: 12px }
+.lb button { background: transparent; color: var(--gold); border: 1px solid var(--gold-soft); border-radius: 999px; padding: 12px 22px; font: 600 .7rem/1 var(--display); letter-spacing: .16em; text-transform: uppercase; cursor: pointer }
+.lb button:hover { border-color: var(--gold) }
+
+/* Meet Ryan */
+.ryan { border-top: 1px solid var(--line); background: var(--panel) }
+.ryan .wrap { display: grid; grid-template-columns: minmax(0, 420px) 1fr; gap: 72px; align-items: center; padding-block: 104px }
+.ryan .wrap > * { min-width: 0 }
+.ryan .shot { aspect-ratio: 4 / 5 }
+.ryan .shot img { object-position: 60% 30% }
+.ryan h2 { margin-top: 18px }
+.ryan p.body { color: var(--muted); margin-top: 18px; max-width: 34em; font-size: 1.08rem }
+.ryan .quotes { display: grid; gap: 14px; margin-top: 30px; max-width: 34em }
+.ryan .quotes p { padding-left: 18px; border-left: 1px solid var(--gold); font: 300 1.1rem/1.45 var(--display) }
+.ryan .quotes small { display: block; margin-top: 6px; font: 500 .66rem/1 var(--display); letter-spacing: .18em; text-transform: uppercase; color: var(--muted) }
+@media (max-width: 860px) { .ryan .wrap { grid-template-columns: 1fr; gap: 40px; padding-block: 72px } .ryan .shot { width: min(340px, 100%) } }
+
+/* Google reviews */
+.reviews { border-top: 1px solid var(--line) }
+.reviews > .wrap { padding-block: 104px }
+.rv-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 56px }
+.rv-top .head { margin-bottom: 0 }
+.badges { display: flex; flex-wrap: wrap; gap: 12px }
+.badge { display: grid; gap: 6px; padding: 16px 22px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); text-decoration: none; min-width: 0; transition: border-color .3s }
+.badge:hover { border-color: var(--gold) }
+.badge b { font: 300 1.7rem/1 var(--display); color: var(--gold) }
+.badge span { font: 500 .66rem/1.3 var(--display); letter-spacing: .18em; text-transform: uppercase; color: var(--muted) }
+.feature { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: start; padding: 48px 0 56px; margin-bottom: 48px; border-block: 1px solid var(--line) }
+.feature .q { font: 200 7rem/.7 var(--display); color: var(--gold) }
+.feature blockquote { margin: 0; font: 300 clamp(1.4rem, 3vw, 2.2rem)/1.35 var(--display); letter-spacing: -.01em; text-wrap: pretty; max-width: 30em }
+.feature cite { display: block; margin-top: 22px; font: 500 .74rem/1 var(--display); letter-spacing: .2em; text-transform: uppercase; font-style: normal; color: var(--gold) }
+.feature cite span { color: var(--muted) }
+@media (max-width: 640px) { .feature { grid-template-columns: 1fr; gap: 0 } .feature .q { font-size: 5rem; height: .5em } }
+.rv-grid { columns: 3 300px; column-gap: 20px }
+.rv { break-inside: avoid; display: grid; gap: 14px; margin: 0 0 20px; padding: 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); transition: border-color .4s, transform .5s var(--ease) }
+.rv:hover { border-color: var(--gold-soft); transform: translateY(-3px) }
+.rv .stars { color: var(--gold); letter-spacing: 3px; font-size: .95rem }
+.rv p { font-size: 1.02rem; line-height: 1.6 }
+.rv footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; align-items: baseline; border: 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--ink) }
+.rv footer b { font-weight: 600 }
+.rv .tag { font: 500 .64rem/1.3 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--muted) }
+.rv-more { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; color: var(--muted); font-size: .95rem }
+
+/* Areas */
+.areas { border-top: 1px solid var(--line) }
+.areas .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; padding-block: 96px }
+.areas .wrap > * { min-width: 0 }
+.areas p.note { color: var(--muted); margin-top: 18px; max-width: 30em }
+.towns { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none }
+.towns li { padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px; font: 400 .95rem/1 var(--display); transition: border-color .3s, color .3s }
+.towns li:hover { border-color: var(--gold); color: var(--gold) }
+.towns li.home { border-color: var(--gold); color: var(--gold) }
+@media (max-width: 860px) { .areas .wrap { grid-template-columns: 1fr; gap: 32px; padding-block: 72px } }
+
+/* Quote builder */
+.quote { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; padding: 36px; border: 1px solid var(--gold-soft); border-radius: 8px; background: var(--black) }
+.quote > * { min-width: 0 }
+.quote h3 { font-size: 1.5rem; font-weight: 300 }
+.quote .sub-t { color: var(--muted); margin-top: 6px; font-size: .95rem }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px }
+.fields .full { grid-column: 1 / -1 }
+.field { display: grid; gap: 8px; min-width: 0 }
+.field label, .field legend { font: 500 .68rem/1 var(--display); letter-spacing: .2em; text-transform: uppercase; color: var(--muted); padding: 0 }
+.field input, .field select, .field textarea { width: 100%; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 13px 14px; font: 400 1rem/1.4 var(--body); transition: border-color .3s }
+.field textarea { min-height: 110px; resize: vertical }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--gold) }
+fieldset.field { border: 0; margin: 0; padding: 0 }
+.seg { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 8px }
+.seg input { position: absolute; left: 0; top: 0; width: 1px; height: 1px; opacity: 0; pointer-events: none }
+.seg label { display: grid; place-items: center; padding: 14px 10px; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; font: 500 .9rem/1.2 var(--display); letter-spacing: 0; text-transform: none; color: var(--ink); text-align: center; transition: border-color .3s, background .3s }
+.seg input:checked + label { border-color: var(--gold); background: rgba(247,199,83,.08); color: var(--gold) }
+.seg input:focus-visible + label { outline: 2px solid var(--gold); outline-offset: 2px }
+.preview { display: grid; gap: 14px; align-content: start; padding: 24px; border-radius: 8px; background: var(--panel); border: 1px solid var(--line) }
+.preview pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font: 400 .92rem/1.55 var(--body); color: var(--ink); min-height: 140px }
+.send { display: grid; gap: 10px }
+.send .btn { width: 100% }
+.preview small { color: var(--muted); font-size: .82rem }
+@media (max-width: 860px) { .quote { grid-template-columns: 1fr; padding: 22px } .fields { grid-template-columns: 1fr } }
+
+.open { display: inline-flex; align-items: center; gap: 8px; font: 500 .72rem/1 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--muted) }
+.open::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--muted) }
+.open.is-open { color: #8fd19e }
+.open.is-open::before { background: #8fd19e; box-shadow: 0 0 0 4px rgba(143,209,158,.15) }
+
+/* Mobile call bar */
+.mbar { display: none }
+@media (max-width: 860px) {
+  .mbar { position: fixed; z-index: 30; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); background: rgba(10,9,8,.94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-top: 1px solid var(--line) }
+  .mbar a { display: grid; place-items: center; padding: 13px 6px; border-radius: 999px; border: 1px solid var(--gold-soft); color: var(--gold); text-decoration: none; font: 600 .7rem/1 var(--display); letter-spacing: .14em; text-transform: uppercase }
+  .mbar a.primary { background: var(--gold); color: var(--black); border-color: var(--gold) }
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) }
+  .bar .btn { display: none }
+}
+
+/* 24/7 emergencies */
+.sos-pill { display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px 9px 12px; border: 1px solid rgba(226,101,79,.5); border-radius: 999px; background: rgba(226,101,79,.08); color: var(--ink); text-decoration: none; font: 500 .72rem/1.2 var(--display); letter-spacing: .14em; text-transform: uppercase }
+.sos-pill i, .sos i.dot-r { width: 8px; height: 8px; border-radius: 50%; background: var(--leak); box-shadow: 0 0 0 4px rgba(226,101,79,.18); flex: none }
+.sos-pill b { color: var(--leak); font-weight: 600 }
+.sos { border-block: 1px solid rgba(226,101,79,.35); background: linear-gradient(90deg, rgba(226,101,79,.10), rgba(226,101,79,.02)) }
+.sos .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px; padding-block: 48px }
+.sos .wrap > div { min-width: 0; max-width: 40em }
+.sos .label { color: var(--leak); display: inline-flex; align-items: center; gap: 10px }
+.sos h2 { margin-top: 14px; font-size: clamp(1.8rem, 4vw, 2.6rem) }
+.sos p { color: var(--muted); margin-top: 12px }
+.sos .btn { background: var(--leak); border-color: var(--leak); color: #fff; font-size: .8rem; padding: 18px 30px }
+.sos .btn:hover { box-shadow: 0 10px 30px -10px rgba(226,101,79,.7) }
+@media (prefers-reduced-motion: no-preference) { @keyframes sosPulse { 50% { box-shadow: 0 0 0 8px rgba(226,101,79,0) } } .sos-pill i, .sos i.dot-r { animation: sosPulse 1.6s ease-out infinite } }
+
+.ig { width: 18px; height: 18px; flex: none }
+.btn .ig { margin-right: 2px }
+footer .ig-link { display: inline-flex; align-items: center; gap: 8px; color: var(--gold); text-decoration: none }
+
+[hidden] { display: none !important }
+[id] { scroll-margin-top: 76px }
+
+/* ---------- Centred layout & spacing ---------- */
+:root { --sec: clamp(80px, 10vw, 128px) }
+.label.rule::after { content: ""; width: 36px; height: 1px; background: var(--gold) }
+.sos .label.rule::after { background: var(--leak) }
+
+.hero-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 24px; padding-block: 56px 48px }
+.hero-grid > div { display: flex; flex-direction: column; align-items: center; max-width: 52em }
+.logo-wrap { order: -1; width: min(280px, 62vw); margin-block: 24px 40px }
+.sos-pill .num { white-space: nowrap }
+@media (max-width: 480px) { .sos-pill .num { display: none } .label.rule { gap: 10px } .label.rule::before, .label.rule::after { width: 18px } .hero .label.rule { letter-spacing: .18em } }
+.hero::before { display: none }
+.hero .lead { margin-inline: auto }
+.hero .ctas { justify-content: center }
+.trust { justify-content: center; gap: 12px 36px; text-align: center }
+
+.doors-sec { padding-block: var(--sec) calc(var(--sec) * .6) }
+.doors-head { justify-content: center; text-align: center; margin-bottom: 56px }
+.doors-head h2 { margin-inline: auto }
+.doors { max-width: 1040px; margin-inline: auto }
+
+.statement { padding-block: calc(var(--sec) * .8); text-align: center }
+.statement .say { margin-inline: auto }
+
+section.block { padding-block: var(--sec) }
+.head { margin-inline: auto; text-align: center; justify-items: center; margin-bottom: 56px }
+.services { max-width: 1000px; margin-inline: auto }
+.faq { margin-inline: auto }
+.steps { max-width: 1040px; margin-inline: auto }
+.steps li { text-align: center; justify-items: center }
+
+.half-head .wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 48px; padding-block: var(--sec) 0 }
+.half-head .wrap > div { display: flex; flex-direction: column; align-items: center; max-width: 44em }
+.half-head .lead { margin-inline: auto }
+.half-head .shot { width: min(420px, 100%) }
+
+.sos .wrap { flex-direction: column; justify-content: center; text-align: center; padding-block: 72px; gap: 28px }
+.sos .wrap > div { margin-inline: auto }
+.sos p { margin-inline: auto; max-width: 36em }
+
+.work > .wrap { padding-block: var(--sec) }
+.ba-row { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 48px; margin: var(--sec) 0 0; padding-top: var(--sec); border-top: 1px solid var(--line) }
+.ba-row > div:first-child { max-width: 42em; display: flex; flex-direction: column; align-items: center }
+.ba-row .lead { margin-inline: auto }
+.ba-row ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px }
+.ba-row li { padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: .95rem }
+.ba-row li::before { display: none }
+.ba { width: min(420px, 100%) }
+.insta { flex-direction: column; justify-content: center; text-align: center; margin-top: 40px }
+
+.ryan .wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 48px; padding-block: var(--sec) }
+.ryan .wrap > div { display: flex; flex-direction: column; align-items: center }
+.ryan .shot { width: min(340px, 100%) }
+.ryan p.body, .ryan .quotes { margin-inline: auto }
+.ryan .quotes { grid-template-columns: 1fr 1fr; gap: 24px; max-width: 46em; width: 100% }
+.ryan .quotes p { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--gold-soft) }
+@media (max-width: 640px) { .ryan .quotes { grid-template-columns: 1fr } }
+
+.areas .wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 40px; padding-block: var(--sec) }
+.areas .wrap > div { display: flex; flex-direction: column; align-items: center; max-width: 44em }
+.areas p.note { margin-inline: auto }
+.towns { justify-content: center; max-width: 960px }
+
+.reviews > .wrap { padding-block: var(--sec) }
+.rv-top { flex-direction: column; align-items: center; text-align: center; margin-bottom: 64px }
+.badges { justify-content: center }
+.feature { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 0; padding-block: 56px; margin-bottom: 56px }
+.feature .q { height: .5em }
+.feature blockquote { margin-inline: auto }
+.rv-more { flex-direction: column; justify-content: center; text-align: center; margin-top: 40px }
+
+.rating .wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 28px; padding-block: var(--sec) }
+.rating .stars { justify-content: center }
+.rating p { margin-inline: auto }
+
+.contact-inner { padding-block: var(--sec); justify-items: center; text-align: center; gap: 56px }
+.contact-inner > div:first-child { display: flex; flex-direction: column; align-items: center }
+.contact .intro { margin-inline: auto }
+.cols { width: 100%; max-width: 920px }
+.co { justify-items: center; text-align: center }
+.line { flex-direction: column; justify-content: center; width: 100% }
+.quote { width: 100%; text-align: left }
+.quote > div:first-child > .label.rule::after { display: none }
+
+footer .wrap { flex-direction: column; justify-content: center; text-align: center; gap: 12px; padding-block: 36px }
+#email { font-size: clamp(.92rem, 3.6vw, 1.12rem) }
+.contact .hours { max-width: 46em; margin-inline: auto; line-height: 1.8 }
+
+/* ---------- Pages ---------- */
+.mainnav { gap: 24px }
+.mainnav a[aria-current="page"] { color: var(--gold) }
+.mainnav a[aria-current="page"]::after { transform: scaleX(1) }
+.menu-btn { display: none; align-items: center; gap: 10px; background: transparent; border: 1px solid var(--gold-soft); border-radius: 999px; padding: 10px 16px; color: var(--gold); font: 600 .7rem/1 var(--display); letter-spacing: .18em; text-transform: uppercase; cursor: pointer }
+.menu-btn span { position: relative; width: 16px; height: 1.5px; background: currentColor; transition: background .3s }
+.menu-btn span::before, .menu-btn span::after { content: ""; position: absolute; left: 0; width: 16px; height: 1.5px; background: currentColor; transition: transform .35s var(--ease) }
+.menu-btn span::before { top: -5px } .menu-btn span::after { top: 5px }
+.menu-btn[aria-expanded="true"] span { background: transparent }
+.menu-btn[aria-expanded="true"] span::before { transform: translateY(5px) rotate(45deg) }
+.menu-btn[aria-expanded="true"] span::after { transform: translateY(-5px) rotate(-45deg) }
+.mnav { position: fixed; z-index: 19; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 90px max(16px, env(safe-area-inset-right, 0px)) 100px max(16px, env(safe-area-inset-left, 0px)); background: rgba(10,9,8,.97); backdrop-filter: blur(10px) }
+.mnav a { color: var(--ink); text-decoration: none; font: 300 clamp(1.7rem, 7vw, 2.4rem)/1.35 var(--display) }
+.mnav a[aria-current="page"] { color: var(--gold) }
+.mnav p { margin-top: 26px; font: 500 .72rem/1.4 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--leak) }
+.mnav p a { font: inherit; color: var(--ink) }
+@media (max-width: 1060px) { .mainnav { gap: 18px; font-size: .68rem } }
+@media (max-width: 920px) { .mainnav { display: none } .menu-btn { display: inline-flex } .bar > .btn { display: none } }
+@media (min-width: 921px) { .mnav { display: none !important } }
+
+.tgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px }
+.tgrid a { display: block; aspect-ratio: 3 / 4; max-width: 100%; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); transition: border-color .4s }
+.tgrid a:hover { border-color: var(--gold) }
+.tgrid img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1s var(--ease) }
+.tgrid a:hover img { transform: scale(1.05) }
+.tgrid a:nth-child(even) { margin-top: 40px }
+@media (max-width: 760px) { .tgrid { grid-template-columns: 1fr 1fr } .tgrid a:nth-child(even) { margin-top: 24px } }
+.more { display: flex; justify-content: center; margin-top: 48px }
+.rv-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start }
+.rv-row .rv { margin: 0 }
+@media (max-width: 860px) { .rv-row { grid-template-columns: 1fr } }
+.cta-band { border-top: 1px solid var(--line); background: radial-gradient(60% 120% at 50% 0%, rgba(247,199,83,.10), transparent 70%) }
+.cta-band .wrap { display: grid; justify-items: center; text-align: center; gap: 16px; padding-block: var(--sec) }
+.cta-band h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 200 }
+.cta-band p:not(.label) { color: var(--muted); max-width: 34em }
+.cta-band .ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 18px }
+.flinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin-bottom: 10px; font: 500 .72rem/1 var(--display); letter-spacing: .16em; text-transform: uppercase }
+.flinks a { color: var(--muted); text-decoration: none } .flinks a:hover { color: var(--gold) }
+.view { animation: none }
+@media (prefers-reduced-motion: no-preference) { .view.entering { animation: viewIn .6s var(--ease) both } @keyframes viewIn { from { opacity: 0; transform: translateY(14px) } } }
+
+/* ---------- Live feeds ---------- */
+.live-g { display: grid; gap: 28px; justify-items: center; text-align: center; margin-bottom: 72px; padding: 40px clamp(16px, 4vw, 40px); border: 1px solid var(--gold-soft); border-radius: 10px; background: var(--panel) }
+.lg-head { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 40px }
+.lg-score { display: flex; align-items: center; gap: 16px; text-align: left }
+.lg-score b { font: 200 3.6rem/1 var(--display); color: var(--gold) }
+.lg-score .stars { color: var(--gold); letter-spacing: 3px }
+.lg-score small { display: block; margin-top: 4px; font: 500 .7rem/1.3 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--muted) }
+.lg-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px }
+.live-g .rv-row { width: 100%; text-align: left }
+.lg-attr { font-size: .82rem; color: var(--muted) }
+.live-ig { margin-bottom: 56px }
+.ig-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px }
+.ig-grid a { display: block; aspect-ratio: 1; max-width: 100%; overflow: hidden; border-radius: 6px; border: 1px solid var(--line); transition: border-color .4s }
+.ig-grid a:hover { border-color: var(--gold) }
+.ig-grid img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1s var(--ease) }
+.ig-grid a:hover img { transform: scale(1.05) }
+@media (max-width: 760px) { .ig-grid { grid-template-columns: repeat(2, 1fr) } }
+
+/* ---------- Motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth }
+  @keyframes rise { from { transform: translateY(105%) } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px) } }
+  @keyframes fadeIn { from { opacity: 0 } }
+  @keyframes logoIn { from { opacity: 0; transform: scale(.92) rotate(-6deg) } }
+  @keyframes ripple { 0% { transform: scale(.9); opacity: 0 } 15% { opacity: .55 } 100% { transform: scale(1.5); opacity: 0 } }
+  @keyframes marquee { to { transform: translateX(-50%) } }
+  @keyframes flow { to { stroke-dashoffset: -40 } }
+  @keyframes drip { 0% { transform: translateY(0) scale(.4); opacity: 0 } 20% { transform: translateY(0) scale(1); opacity: 1 } 70% { opacity: 1 } 100% { transform: translateY(22px) scale(.9); opacity: 0 } }
+  @keyframes pulse { 50% { opacity: .25 } }
+  @keyframes draw { from { stroke-dashoffset: 1 } }
+
+  .hero .label, .hero .sos-pill { animation: fadeIn 1s .1s var(--ease) both }
+  .hero h1 .ln > span { animation: rise 1.1s var(--ease) both }
+  .hero h1 .ln:nth-child(1) > span { animation-delay: .15s }
+  .hero h1 .ln:nth-child(2) > span { animation-delay: .27s }
+  .hero h1 .ln:nth-child(3) > span { animation-delay: .39s }
+  .hero .lead { animation: fadeUp 1s .6s var(--ease) both }
+  .hero .ctas { animation: fadeUp 1s .75s var(--ease) both }
+  .hero .trust { animation: fadeIn 1.2s .95s var(--ease) both }
+  .logo-wrap img { animation: logoIn 1.6s .2s var(--ease) both }
+  .ripple { animation: ripple 7.5s cubic-bezier(.25,.6,.3,1) infinite }
+  .ripple:nth-child(2) { animation-delay: 2.5s }
+  .ripple:nth-child(3) { animation-delay: 5s }
+  .brand svg { animation: draw 2s .2s var(--ease) both }
+  .marquee-track { animation: marquee 48s linear infinite }
+  .marquee:hover .marquee-track { animation-play-state: paused }
+  .flow { animation: flow 1.6s linear infinite }
+  .drop { transform-box: fill-box; transform-origin: center; animation: drip 2.2s ease-in infinite }
+  .spec .live::before { animation: pulse 1.8s ease-in-out infinite }
+
+  @supports (animation-timeline: view()) {
+    .reveal { animation: fadeUp linear both; animation-timeline: view(); animation-range: entry 5% entry 45% }
+    .door .arches { animation: draw linear both; animation-timeline: view(); animation-range: entry 10% cover 40% }
+    .steps li::after { animation: grow linear both; animation-timeline: view(); animation-range: entry 20% cover 45% }
+    @keyframes grow { from { transform: scaleX(0) } }
+    .half-head .big { animation: bigIn linear both; animation-timeline: view(); animation-range: entry 0% cover 50% }
+    @keyframes bigIn { from { opacity: 0; letter-spacing: .1em } }
+  }
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="arch" viewBox="0 0 100 120">
+      <g fill="none" stroke="currentColor" stroke-width="5">
+        <path pathLength="1" d="M5 117 V50 A45 45 0 0 1 95 50 V117 Z"/>
+        <path pathLength="1" d="M19 117 V52 A31 31 0 0 1 81 52 V117"/>
+        <path pathLength="1" d="M33 117 V54 A17 17 0 0 1 67 54 V117"/>
+        <path pathLength="1" d="M44 117 V57 A6 6 0 0 1 56 57 V117"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="Goldcrest, home"><svg class="draw" aria-hidden="true"><use href="#arch"/></svg>GOLDCREST</a>
+    <nav aria-label="Main" class="mainnav">
+      <a href="#home">Home</a>
+      <a href="#plumbing">Plumbing</a>
+      <a href="#bathrooms">Bathrooms</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="tel:+447481105780">07481 105780</a>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="mnav"><span></span>Menu</button>
+  </div>
+</header>
+
+<nav class="mnav" id="mnav" aria-label="Menu" hidden>
+  <a href="#home">Home</a>
+  <a href="#plumbing">Plumbing</a>
+  <a href="#bathrooms">Bathrooms</a>
+  <a href="#work">Our work</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#about">About Ryan</a>
+  <a href="#contact">Contact</a>
+  <p>24/7 emergencies · <a href="tel:+447481105780">07481 105780</a></p>
+</nav>
+
+<main id="top">
+  <div class="view" id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <a class="sos-pill" href="tel:+447481105780"><i></i><b>24/7</b> Emergency call-outs<span class="num"> · 07481 105780</span></a>
+        <p class="label rule" style="margin-top: 22px">Preston · Plumbing &amp; Bathrooms</p>
+        <h1>
+          <span class="ln"><span>Plumbing done right.</span></span>
+          <span class="ln"><span><b>Bathrooms done</b></span></span>
+          <span class="ln"><span><b>beautifully.</b></span></span>
+        </h1>
+        <p class="lead">Two Preston companies, one trusted team with over 11 years' experience. Goldcrest Plumbing fixes leaks, blockages and heating. Goldcrest Bathrooms designs and fits complete new bathrooms.</p>
+        <div class="ctas">
+          <a class="btn" href="#contact">Get a free quote <span class="arr">→</span></a>
+          <a class="btn btn-line" href="#reviews">See our reviews</a>
+        </div>
+      </div>
+      <div class="logo-wrap">
+        <span class="ripple" aria-hidden="true"></span>
+        <span class="ripple" aria-hidden="true"></span>
+        <span class="ripple" aria-hidden="true"></span>
+        <img src="logo.png" width="520" height="520" alt="Goldcrest Plumbing &amp; Bathrooms logo">
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="trust">
+        <a href="https://www.trustatrader.com/traders/goldcrest-plumbing-bathrooms-ltd-plumbers-preston-central"><span class="stars" aria-hidden="true">★★★★★</span>4.98 / 5 on TrustATrader · 28 reviews</a>
+        <a href="#reviews"><span class="dot"></span><span data-g="count">60+</span> Google reviews</a>
+        <span><span class="dot"></span>24/7 emergencies</span>
+        <span><span class="dot"></span>G3 qualified</span>
+        <span><span class="dot"></span>Fully insured</span>
+        <span><span class="dot"></span>11+ years' experience</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Our services">
+    <div class="marquee-track">
+      <ul>
+        <li>24/7 emergencies</li><li>Bathroom refits</li><li>Leak repairs</li><li>Walk-in showers</li><li>Wet rooms</li><li>Blocked drains</li><li>Unvented cylinders</li><li>Wall panelling &amp; tiling</li><li>Radiators</li>
+      </ul>
+      <ul aria-hidden="true">
+        <li>24/7 emergencies</li><li>Bathroom refits</li><li>Leak repairs</li><li>Walk-in showers</li><li>Wet rooms</li><li>Blocked drains</li><li>Unvented cylinders</li><li>Wall panelling &amp; tiling</li><li>Radiators</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="doors-sec">
+    <div class="wrap">
+      <div class="doors-head reveal">
+        <div>
+          <p class="label rule">Two companies, one standard</p>
+          <h2 style="margin-top: 18px">Choose the help <b>you need.</b></h2>
+        </div>
+      </div>
+      <div class="doors">
+        <a class="door reveal" href="#plumbing">
+          <svg class="arches" viewBox="0 0 100 120" aria-hidden="true" style="color: var(--gold)"><use href="#arch"/></svg>
+          <span class="label">24/7 emergencies · Repairs · Heating</span>
+          <h2>Goldcrest Plumbing Ltd</h2>
+          <p>Dripping taps, blocked drains, burst pipes and new radiators. Fast, tidy work at a fair price.</p>
+          <span class="go">Plumbing services <span>→</span></span>
+        </a>
+        <a class="door reveal" href="#bathrooms">
+          <svg class="arches" viewBox="0 0 100 120" aria-hidden="true" style="color: var(--gold)"><use href="#arch"/></svg>
+          <span class="label">Design · Installation · Panelling &amp; tiling</span>
+          <h2>Goldcrest Bathrooms Ltd</h2>
+          <p>Complete bathroom refits, walk-in showers and wet rooms, planned and fitted by one team.</p>
+          <span class="go">Bathroom services <span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div class="wrap">
+      <p class="say reveal">From a <b>tap washer</b> to a full <b>wet room</b>, every job gets the same care, the same tidy finish and a price agreed <b>before we start.</b></p>
+      <p class="label rule sig reveal">Goldcrest · Preston, Lancashire</p>
+    </div>
+  </section>
+
+
+  <section class="block teaser">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label rule">Our work</p>
+        <h2>Recent bathrooms <b>&amp; plumbing</b></h2>
+        <p>A few of our latest jobs around Preston and Lancashire.</p>
+      </div>
+      <div class="tgrid">
+        <a class="reveal" href="#work"><img src="img/pink-shower.webp" width="1050" height="1400" loading="lazy" alt="Walk-in shower with pink herringbone tiles and brushed brass fittings"></a>
+        <a class="reveal" href="#work"><img src="img/green-cloakroom.webp" width="1120" height="1400" loading="lazy" alt="Cloakroom with green wall panelling and brass mirror"></a>
+        <a class="reveal" href="#work"><img src="img/marble-bath.webp" width="1050" height="1400" loading="lazy" alt="White bath with glass screen and marble-effect wall panels"></a>
+        <a class="reveal" href="#work"><img src="img/led-mirror-vanity.webp" width="1050" height="1400" loading="lazy" alt="Navy vanity unit with brass tap and LED mirror"></a>
+      </div>
+      <div class="more reveal"><a class="btn" href="#work">See all our work <span class="arr">→</span></a></div>
+    </div>
+  </section>
+
+  <section class="block sub teaser">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label rule">Reviews</p>
+        <h2>Rated <b>4.98 out of 5</b></h2>
+        <p>On TrustATrader, with <span data-g="count">60+</span> reviews on Google.</p>
+      </div>
+      <div class="rv-row">
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Excellent attention to detail for fitting a new bathroom. No problems from start to finish. Clear visualisation and on time with the delivery and completion. Would highly recommend.</p><footer><b>Georgia M.</b><span class="tag">Shower installation</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Ryan came when he said, saw the problem with an appointment sorted, promptly came and all sorted. What a great plumber, why can't everybody be like him.</p><footer><b>Brian R.</b><span class="tag">Google review</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Great service .. came the same day and at the agreed time. I explained everything clearly and completed the job efficiently. Definitely would recommend.</p><footer><b>Cathy H.</b><span class="tag">Same-day visit</span></footer></article>
+      </div>
+      <div class="more reveal"><a class="btn" href="#reviews">Read all reviews <span class="arr">→</span></a></div>
+    </div>
+  </section>
+  </div>
+
+  <!-- ============ PLUMBING ============ -->
+  <div class="half view" id="plumbing" hidden>
+    <section class="half-head">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="big" aria-hidden="true">Plumbing</div>
+          <p class="label rule">Goldcrest Plumbing Ltd</p>
+          <h2>Leaks fixed. <b>Pipes sorted.</b></h2>
+          <p class="lead">From a dripping tap to a new radiator, we turn up when we say we will, explain the problem in plain English and leave everything clean.</p>
+          <a class="btn" href="#contact">Book a plumber <span class="arr">→</span></a>
+        </div>
+        <figure class="shot reveal"><img src="img/radiator-install.webp" width="1120" height="1400" loading="lazy" alt="New white vertical-panel radiator fitted against an orange wall"><figcaption>Radiator installation · Preston</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="label rule">Plumbing services</p>
+          <h2>What Goldcrest Plumbing <b>can help with</b></h2>
+          <p>Not sure if it's a job for us? Call and ask. Most everyday problems are fixed in a single visit.</p>
+        </div>
+        <div class="services">
+          <article class="svc reveal">
+            <span class="n">01</span>
+            <h3>Leaks, repairs &amp; emergencies</h3>
+            <p>Fast fixes for the problems that can't wait, with 24/7 emergency call-outs.</p>
+            <ul><li>Leaking taps, pipes and toilets</li><li>Running or slow-filling cisterns</li><li>Low water pressure</li><li>Stopcock and valve replacement</li></ul>
+          </article>
+          <article class="svc reveal">
+            <span class="n">02</span>
+            <h3>Blocked sinks &amp; drains</h3>
+            <p>Water draining away properly again.</p>
+            <ul><li>Sinks, baths and showers</li><li>Toilets</li><li>Waste pipe and trap repairs</li></ul>
+          </article>
+          <article class="svc reveal">
+            <span class="n">03</span>
+            <h3>Fixtures &amp; appliances</h3>
+            <p>New fittings without a full renovation.</p>
+            <ul><li>Toilets, basins and taps</li><li>Electric and mixer showers</li><li>Kitchen sinks</li><li>Washing machine and dishwasher plumbing</li></ul>
+          </article>
+          <article class="svc reveal">
+            <span class="n">04</span>
+            <h3>Hot water &amp; heating</h3>
+            <p>Keeping the warmth where you want it.</p>
+            <ul><li>Unvented hot water cylinders (G3 qualified)</li><li>Radiator fitting and moving</li><li>Heated towel rails</li><li>Power flushing</li><li>Thermostatic radiator valves</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sos" id="emergency">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="label"><i class="dot-r"></i>24/7 emergency plumber</p>
+          <h2>Burst pipe? Leak through the ceiling? <b>Call us any time, day or night.</b></h2>
+          <p>Emergency call-outs 24 hours a day, 7 days a week, across Preston, Blackpool, Darwen, Southport, Ormskirk and everywhere in between.</p>
+        </div>
+        <a class="btn reveal" href="tel:+447481105780">Call 07481 105780</a>
+      </div>
+    </section>
+
+    <section class="block sub">
+      <div class="wrap">
+        <div class="head reveal"><p class="label rule">Plumbing FAQ</p><h2>Common questions</h2></div>
+        <div class="faq reveal">
+          <details open><summary>Do you do emergency call-outs?<i aria-hidden="true"></i></summary><p>Yes, 24 hours a day, 7 days a week. For burst pipes, major leaks or no water, call 07481 105780 any time.</p></details>
+          <details><summary>Do you do small jobs?<i aria-hidden="true"></i></summary><p>Yes. Leaking taps, running toilets and blocked sinks are a big part of what we do.</p></details>
+          <details><summary>Will I know the price before you start?<i aria-hidden="true"></i></summary><p>Yes. We look at the problem, tell you what's wrong and agree the price with you before any work begins.</p></details>
+          <details><summary>Can you work on unvented hot water cylinders?<i aria-hidden="true"></i></summary><p>Yes. We're G3 qualified, so we're certified to install, service and repair unvented cylinders.</p></details>
+          <details><summary>What should I do if a pipe bursts?<i aria-hidden="true"></i></summary><p>Turn off the water at your stopcock (usually under the kitchen sink), switch off electrics near the leak, then call us on 07481 105780. We answer emergencies 24/7.</p></details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ BATHROOMS ============ -->
+  <div class="half view" id="bathrooms" hidden>
+    <section class="half-head">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="big" aria-hidden="true">Bathrooms</div>
+          <p class="label rule">Goldcrest Bathrooms Ltd</p>
+          <h2>Your new bathroom, <b>fitted properly.</b></h2>
+          <p class="lead">We plan, strip out, plumb, tile and finish. One team handles the whole job, so you deal with one person from the first visit to the final clean.</p>
+          <a class="btn" href="#contact">Book a free survey <span class="arr">→</span></a>
+        </div>
+        <figure class="shot reveal"><img src="img/pink-grey-bathroom.webp" width="1050" height="1400" loading="lazy" alt="Finished bathroom with pink herringbone shower wall, brass fittings, grey marble-effect panels and navy vanity"><figcaption>Full bathroom refit · Goldcrest Bathrooms</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="label rule">Bathroom services</p>
+          <h2>What Goldcrest Bathrooms <b>can do</b></h2>
+        </div>
+        <div class="services">
+          <article class="svc reveal"><span class="n">01</span><h3>Complete bathroom refits</h3><p>A full strip-out and new bathroom, planned around your room and budget.</p></article>
+          <article class="svc reveal"><span class="n">02</span><h3>Walk-in showers &amp; wet rooms</h3><p>Level-access showers, glass screens and fully tanked wet rooms.</p></article>
+          <article class="svc reveal"><span class="n">03</span><h3>Wall panelling, tiling &amp; flooring</h3><p>Waterproof wall panels or traditional tiles, your choice. Marble-effect panels, herringbone tiling, decorative wall panelling, boxing-in and new flooring.</p></article>
+          <article class="svc reveal"><span class="n">04</span><h3>Accessible bathrooms</h3><p>Low-access showers, grab rails and comfort-height toilets for easier everyday use.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block sub">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="label rule">How it works</p>
+          <h2>Six steps to <b>your new bathroom</b></h2>
+          <p>Here's what to expect from the first visit to the day you use your new bathroom.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><h3>Free survey</h3><p>We visit, measure up, check the existing pipework and talk through what you want.</p></li>
+          <li class="reveal"><h3>Design &amp; quote</h3><p>You get a layout and a fixed written quote. Choose your suite and tiles in your own time.</p></li>
+          <li class="reveal"><h3>Strip-out</h3><p>We protect your home and remove the old bathroom. We can arrange disposal of the old suite and waste for you.</p></li>
+          <li class="reveal"><h3>First fix</h3><p>New pipework, waste and any wall or floor preparation, done before anything is closed up.</p></li>
+          <li class="reveal"><h3>Panelling, tiling &amp; finishing</h3><p>Wall panels or tiles fitted, flooring laid, boxing-in finished and everything sealed.</p></li>
+          <li class="reveal"><h3>Second fix &amp; handover</h3><p>Suite connected, everything tested for leaks, the room cleaned and the work explained to you.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="head reveal"><p class="label rule">Bathroom FAQ</p><h2>Common questions</h2></div>
+        <div class="faq reveal">
+          <details open><summary>How much does a new bathroom cost?<i aria-hidden="true"></i></summary><p>It depends on the size of the room, the suite you choose and how much the layout changes. After a free survey we give you a fixed written price, so you know the full cost before you commit.</p></details>
+          <details><summary>What affects the price of a new bathroom?<i aria-hidden="true"></i></summary><p>The main things are the size of the room, the suite and tiles you choose, whether the layout changes (moving a toilet or shower means new pipework and waste), and extras like underfloor heating or a wet room. We talk you through each of these at the free survey so there are no surprises.</p></details>
+          <details><summary>Can I supply my own suite and tiles?<i aria-hidden="true"></i></summary><p>Yes. We're happy to fit items you've bought yourself, or we can recommend suppliers and order everything for you.</p></details>
+          <details><summary>Will I be without a toilet during the work?<i aria-hidden="true"></i></summary><p>If it's your only toilet, we plan the work so you're never without one overnight.</p></details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="work view" id="work" hidden>
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label rule">Our work</p>
+        <h2>Recent bathrooms <b>&amp; plumbing</b></h2>
+        <p>Recent jobs from around Preston and Lancashire. Tap any photo to see it full size.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <button type="button" class="reveal" data-i="0"><img src="img/pink-shower.webp" width="1050" height="1400" loading="lazy" alt="Walk-in shower with pink herringbone tiles, brass rainfall shower, thermostatic valve and brass niche"><span>Walk-in shower · pink herringbone & brushed brass</span></button>
+        <button type="button" class="reveal" data-i="1"><img src="img/green-cloakroom.webp" width="1120" height="1400" loading="lazy" alt="Cloakroom with green wall panelling, brass mirror and tap, column radiator"><span>Panelled cloakroom in green & brass</span></button>
+        <button type="button" class="reveal" data-i="2"><img src="img/accessible-shower.webp" width="788" height="1400" loading="lazy" alt="Walk-in shower with marble-effect panels, fold-down seat and grab rails"><span>Accessible walk-in shower with seat & grab rails</span></button>
+        <button type="button" class="reveal" data-i="3"><img src="img/led-mirror-vanity.webp" width="1050" height="1400" loading="lazy" alt="Basin on navy vanity unit with brass waterfall tap and gold-framed LED mirror"><span>Vanity unit & LED mirror</span></button>
+        <button type="button" class="reveal" data-i="4"><img src="img/marble-bath.webp" width="1050" height="1400" loading="lazy" alt="White bath with glass screen, rainfall shower and dramatic marble-effect wall panels"><span>Marble-effect bath & shower</span></button>
+        <button type="button" class="reveal" data-i="5"><img src="img/green-vanity.webp" width="1120" height="1400" loading="lazy" alt="Green shaker vanity unit with brass knobs and tap"><span>Green vanity & brass tap</span></button>
+        <button type="button" class="reveal" data-i="6"><img src="img/grey-bathroom.webp" width="1050" height="1400" loading="lazy" alt="Grey tiled bathroom with chrome heated towel rail, vanity and toilet"><span>Grey bathroom & chrome towel rail</span></button>
+        <button type="button" class="reveal" data-i="8"><img src="img/green-cloakroom-radiator.webp" width="1400" height="1400" loading="lazy" alt="White column radiator with brass valves on green panelling next to a toilet"><span>Column radiator & brass valves</span></button>
+        <button type="button" class="reveal" data-i="9"><img src="img/towel-ring-radiator.webp" width="1400" height="1400" loading="lazy" alt="Brass towel ring on green panelling beside a column radiator"><span>The finishing details</span></button>
+      </div>
+      <div class="live-ig" id="live-ig" hidden>
+        <div class="head"><p class="label rule">Latest on Instagram</p><h2>Fresh from <b>@goldcrest.ltd</b></h2><p>Our newest posts, straight from Instagram.</p></div>
+        <div class="ig-grid" id="ig-grid"></div>
+      </div>
+      <div class="insta reveal">
+        <span>See new jobs every week on Instagram</span>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px"><a class="btn" href="https://www.instagram.com/goldcrest.ltd/" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Follow @goldcrest.ltd on Instagram</a><a class="btn btn-line" href="https://www.tiktok.com/@goldcrest.plumbing" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Watch us on TikTok</a></div>
+      </div>
+
+      <div class="ba-row">
+        <div class="reveal">
+          <p class="label rule">Before &amp; after</p>
+          <h2 style="margin-top: 18px">Same room. <b>New bathroom.</b></h2>
+          <p class="lead">Drag the slider to see the change. Dated beige tiles and a loose shower screen swapped for large-format grey tiles, a rainfall shower, a new vanity unit and wood-effect flooring.</p>
+          <ul><li>Full strip-out of the old bathroom</li><li>New rainfall shower and bath screen</li><li>New wall tiles and flooring</li><li>Vanity unit and close-coupled toilet</li></ul>
+        </div>
+        <div class="ba reveal" id="ba">
+          <img src="img/before.webp" width="787" height="1400" alt="Before: dated bathroom with beige tiles, pedestal basin and old shower screen">
+          <img class="after" src="img/after.webp" width="787" height="1400" alt="After: new grey-tiled bathroom with rainfall shower, white vanity unit and wood-effect floor">
+          <span class="tag b">Before</span><span class="tag a">After</span>
+          <div class="handle" aria-hidden="true"></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" id="ba-range">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="lb" id="lb" aria-label="Photo viewer">
+    <div class="lb-inner">
+      <div class="lb-top"><span id="lb-cap"></span><button type="button" id="lb-close">Close</button></div>
+      <div class="lb-stage"><img id="lb-img" alt=""></div>
+      <div class="lb-nav"><button type="button" id="lb-prev">← Prev</button><button type="button" id="lb-next">Next →</button></div>
+    </div>
+  </dialog>
+
+  <div class="view" id="reviews" hidden>
+  <section class="reviews" id="reviews-list">
+    <div class="wrap">
+      <div class="rv-top">
+        <div class="head reveal">
+          <p class="label rule">Reviews</p>
+          <h2>What Preston says <b>about Ryan &amp; the team</b></h2>
+          <p>Real reviews from our Google Business profile.</p>
+        </div>
+        <div class="badges reveal">
+          <div class="badge"><b data-g="count">60+</b><span>Google reviews</span></div>
+          <a class="badge" href="#ratings"><b>4.98</b><span>TrustATrader · 28 reviews</span></a>
+        </div>
+      </div>
+
+      <div class="live-g" id="live-google" hidden>
+        <div class="lg-head">
+          <div class="lg-score"><b id="lg-rating">5.0</b><div><span class="stars" aria-hidden="true">★★★★★</span><small><span data-g="count"></span> reviews on Google</small></div></div>
+          <div class="lg-links"><a class="btn btn-line" id="lg-all" href="#" target="_blank" rel="noopener">See all on Google</a><a class="btn" id="lg-write" href="#" target="_blank" rel="noopener">Leave us a review</a></div>
+        </div>
+        <p class="label rule">Latest Google reviews</p>
+        <div class="rv-row" id="lg-list"></div>
+        <p class="lg-attr">Reviews from Google, loaded live.</p>
+      </div>
+
+      <figure class="feature reveal" style="margin-inline: 0">
+        <div class="q" aria-hidden="true">“</div>
+        <div>
+          <blockquote>Ryan came when he said, saw the problem with an appointment sorted, promptly came and all sorted. What a great plumber, why can't everybody be like him. We have no hesitation in recommending him.</blockquote>
+          <cite>Brian R. <span>· Google review · ★★★★★</span></cite>
+        </div>
+      </figure>
+
+      <div class="rv-grid">
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Excellent attention to detail for fitting a new bathroom. No problems from start to finish. Clear visualisation and on time with the delivery and completion. Would highly recommend.</p><footer><b>Georgia M.</b><span class="tag">Shower installation</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Brilliant! Happy to help when I put a nail through a pipe. Can out straight away and got it sorted.</p><footer><b>Rachael C.</b><span class="tag">Pipe repair</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Great service. Ryan is very nice gentleman who was helpful and explained everything. He worked without any breaks. Would highly recommend.</p><footer><b>Wendy C.</b><span class="tag">Google review</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Fitted a large upright radiator in the kitchen. Easy to deal with and punctual. Did a sound job, would use again no issues.</p><footer><b>Orlando M.</b><span class="tag">Radiator installation</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Great service .. came the same day and at the agreed time. I explained everything clearly and completed the job efficiently. Definitely would recommend.</p><footer><b>Cathy H.</b><span class="tag">Same-day visit</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Ryan came out to repair our leaking shower unit. Thoroughly checked the issue, showed me the what was causing problem…</p><footer><b>Matt C.</b><span class="tag">Shower leak repair</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Always professional, always helpful. Explains what was wrong and how he fixed it.</p><footer><b>Faheemud-deen P.</b><span class="tag">Google review</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Goldcrest Plumbing carried out a kitchen sink replacement for us, changing from stainless steel to a ceramic sink and…</p><footer><b>Katie W.</b><span class="tag">Kitchen sink replacement</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Needed my tap fixing and rang up for a quote, explained what needed to be done and was quoted straight away and was told…</p><footer><b>Brian E.</b><span class="tag">Tap repair</span></footer></article>
+        <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Excellent service quick response times and very reasonable.</p><footer><b>Asef K.</b><span class="tag">Google review</span></footer></article>
+      </div>
+      <div class="rv-more reveal">
+        <span>Read every review on Google and TrustATrader.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="rating" id="ratings">
+    <div class="wrap">
+      <div class="score-wrap reveal">
+        <div class="score" id="score" data-to="4.98">4.98</div>
+        <small>out of 5 · 28 reviews</small>
+        <div class="stars" aria-label="5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      </div>
+      <div class="reveal">
+        <p class="label rule">TrustATrader member · TT30879</p>
+        <h2 style="margin-top: 16px">Rated by our customers <b>in Preston</b></h2>
+        <p>We're vetted and approved by TrustATrader. Read what our customers say about our plumbing and bathroom work.</p>
+      </div>
+      <a class="btn btn-line reveal" href="https://www.trustatrader.com/traders/goldcrest-plumbing-bathrooms-ltd-plumbers-preston-central">Read our reviews <span class="arr">→</span></a>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="view" id="about" hidden>
+  <section class="ryan" id="meet-ryan">
+    <div class="wrap">
+      <figure class="shot reveal"><img src="img/ryan-at-work.webp" width="788" height="1400" loading="lazy" alt="Ryan from Goldcrest fitting a vanity unit with an impact driver"><figcaption>Ryan · on the tools</figcaption></figure>
+      <div class="reveal">
+        <p class="label rule">Meet Ryan</p>
+        <h2>The name our customers <b>keep mentioning</b></h2>
+        <p class="body">Goldcrest is Ryan's business. When you call, you speak to the person who will do the work. He turns up when he says he will, explains what's wrong in plain English and doesn't leave until the job is right.</p>
+        <div class="quotes">
+          <p>What a great plumber, why can't everybody be like him.<small>Brian R. · Google</small></p>
+          <p>Ryan is very nice gentleman who was helpful and explained everything.<small>Wendy C. · Google</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="areas" id="areas">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label rule">Areas we cover</p>
+        <h2 style="margin-top: 18px">Based in Preston, <b>covering Blackpool to Darwen, Southport to Ormskirk</b></h2>
+        <p class="note">We cover the Fylde coast, Preston, Blackburn and Darwen, West Lancashire and Southport, and everywhere in between. Not sure if we reach you? Just ask.</p>
+      </div>
+      <ul class="towns reveal">
+        <li class="home">Preston</li><li>Blackpool</li><li>Lytham St Annes</li><li>Poulton-le-Fylde</li><li>Kirkham</li><li>Freckleton</li><li>Fulwood</li><li>Penwortham</li><li>Ashton-on-Ribble</li><li>Ribbleton</li><li>Broughton</li><li>Goosnargh</li><li>Longridge</li><li>Garstang</li><li>Walton-le-Dale</li><li>Bamber Bridge</li><li>Hoghton</li><li>Blackburn</li><li>Darwen</li><li>Leyland</li><li>Chorley</li><li>Euxton</li><li>Clayton-le-Woods</li><li>Longton</li><li>Hutton</li><li>Tarleton</li><li>Hesketh Bank</li><li>Croston</li><li>Rufford</li><li>Burscough</li><li>Ormskirk</li><li>Southport</li><li class="home">&amp; everywhere in between</li>
+      </ul>
+    </div>
+  </section>
+
+  </div>
+
+  <section class="contact view" id="contact" hidden>
+    <div class="wrap contact-inner">
+      <div class="reveal">
+        <p class="label rule">Contact</p>
+        <h2>Tell us about <b>your job.</b></h2>
+        <p class="intro">One number and one email for both companies. Tell us roughly what you need, add a photo if you have one, and we'll get back to you to arrange a free quote.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:26px"><a class="btn btn-line" href="https://www.instagram.com/goldcrest.ltd/" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram @goldcrest.ltd</a><a class="btn btn-line" href="https://www.tiktok.com/@goldcrest.plumbing" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>TikTok @goldcrest.plumbing</a></div>
+      </div>
+      <div class="cols">
+        <div class="co reveal">
+          <h3>Call or text</h3>
+          <p class="what">For both companies, and 24/7 for emergencies</p>
+          <div class="line"><div><div class="k">Phone</div><a class="v" id="phone" href="tel:+447481105780">07481 105780</a></div><button class="copy" type="button" data-copy="phone">Copy</button></div>
+        </div>
+        <div class="co reveal">
+          <h3>Email</h3>
+          <p class="what">Send a photo of the job for a faster quote</p>
+          <div class="line"><div><div class="k">Email</div><a class="v" id="email" href="mailto:goldcrest.plumbing.bathrooms@gmail.com">goldcrest.plumbing.bathrooms@gmail.com</a></div><button class="copy" type="button" data-copy="email">Copy</button></div>
+        </div>
+      </div>
+      <p class="hours"><span class="open" id="open-status">Opening hours</span>&nbsp;&nbsp; Office hours Mon–Fri 8am–6pm · Sat 9am–1pm · <b style="color: var(--leak); font-weight: 600">24/7 for emergencies</b> · Covering Preston, Blackpool, Darwen, Southport, Ormskirk &amp; everywhere in between</p>
+
+      <form class="quote reveal" id="quote" autocomplete="on">
+        <div>
+          <p class="label rule">Quick quote</p>
+          <h3 style="margin-top: 14px">Request a quote in under a minute</h3>
+          <p class="sub-t">Fill this in and send it to us by WhatsApp or email. Your message is written for you.</p>
+          <div class="fields">
+            <fieldset class="field full">
+              <legend>What do you need?</legend>
+              <div class="seg" style="margin-top: 8px">
+                <input type="radio" name="kind" id="k-plumb" value="Plumbing" checked><label for="k-plumb">Plumbing job</label>
+                <input type="radio" name="kind" id="k-bath" value="Bathroom"><label for="k-bath">New bathroom</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="q-job">Type of job</label>
+              <select id="q-job"></select>
+            </div>
+            <div class="field">
+              <label for="q-when">When</label>
+              <select id="q-when">
+                <option>As soon as possible</option>
+                <option>Within a couple of weeks</option>
+                <option>Within 1–3 months</option>
+                <option>Just getting prices</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="q-name">Your name</label>
+              <input id="q-name" type="text" autocomplete="name" placeholder="e.g. Sarah">
+            </div>
+            <div class="field">
+              <label for="q-area">Town or postcode</label>
+              <input id="q-area" type="text" autocomplete="postal-code" placeholder="e.g. PR2">
+            </div>
+            <div class="field full">
+              <label for="q-desc">Tell us about the job</label>
+              <textarea id="q-desc" placeholder="e.g. Kitchen tap has been dripping for a week and the cupboard underneath is damp."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="preview">
+          <span class="label">Your message</span>
+          <pre id="q-msg"></pre>
+          <div class="send">
+            <a class="btn" id="q-wa" href="https://wa.me/447481105780">Send on WhatsApp <span class="arr">→</span></a>
+            <a class="btn btn-line" id="q-mail" href="mailto:goldcrest.plumbing.bathrooms@gmail.com">Send by email</a>
+            <button class="copy" type="button" id="q-copy" style="justify-self: center">Copy message</button>
+          </div>
+          <small>Add photos in WhatsApp or as email attachments. They help us quote faster.</small>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="cta-band" id="cta-band">
+    <div class="wrap">
+      <p class="label rule">Get in touch</p>
+      <h2>Ready when <b>you are.</b></h2>
+      <p>Free quotes, prices agreed before we start, and 24/7 emergency call-outs.</p>
+      <div class="ctas">
+        <a class="btn" href="#contact">Get a free quote <span class="arr">→</span></a>
+        <a class="btn btn-line" href="tel:+447481105780">Call 07481 105780</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="flinks" aria-label="Footer"><a href="#home">Home</a><a href="#plumbing">Plumbing</a><a href="#bathrooms">Bathrooms</a><a href="#work">Our work</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="brand" href="#home" aria-label="Goldcrest home"><svg aria-hidden="true"><use href="#arch"/></svg>GOLDCREST</a>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px"><a class="ig-link" href="https://www.instagram.com/goldcrest.ltd/" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>@goldcrest.ltd</a><a class="ig-link" href="https://www.tiktok.com/@goldcrest.plumbing" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>@goldcrest.plumbing</a></div>
+    <span>© 2026 Goldcrest Plumbing Ltd &amp; Goldcrest Bathrooms Ltd · Preston, Lancashire · TrustATrader member TT30879 · G3 qualified · Fully insured</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="primary" href="tel:+447481105780">Call 24/7</a>
+  <a href="https://wa.me/447481105780">WhatsApp</a>
+  <a href="#quote">Quote</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Goldcrest Plumbing & Bathrooms",
+  "telephone": "+447481105780",
+  "email": "goldcrest.plumbing.bathrooms@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Preston", "addressRegion": "Lancashire", "addressCountry": "GB" },
+  "areaServed": ["Preston", "Blackpool", "Lytham St Annes", "Kirkham", "Garstang", "Longridge", "Blackburn", "Darwen", "Leyland", "Chorley", "Ormskirk", "Southport"],
+  "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-13:00"],
+  "description": "Plumbing and bathroom fitting in Preston and across Lancashire. 24/7 emergency call-outs.",
+  "sameAs": ["https://www.instagram.com/goldcrest.ltd/", "https://www.tiktok.com/@goldcrest.plumbing"],
+  "image": "img/pink-grey-bathroom.webp",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.98", "reviewCount": "28" }
+}
+</script>
+
+<script>
+  // Live feeds. Fill these in to switch on live Google reviews and Instagram posts.
+  window.GOLDCREST = {
+    googleMapsKey: "",   // Google Maps JavaScript API key, restricted to the website's address
+    googlePlaceId: "",   // Google Place ID for Goldcrest Plumbing & Bathrooms
+    beholdFeedUrl: ""    // JSON feed URL from behold.so for @goldcrest.ltd
+  };
+</script>
+
+<script>
+(async () => {
+  // Live Google reviews and Instagram posts (only runs once the settings above are filled in)
+  const C = window.GOLDCREST || {};
+  const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  if (C.beholdFeedUrl) {
+    try {
+      const d = await (await fetch(C.beholdFeedUrl)).json();
+      const posts = (Array.isArray(d) ? d : d.posts || []).slice(0, 12);
+      const img = p => p.sizes?.medium?.mediaUrl || p.thumbnailUrl || p.mediaUrl;
+      document.getElementById("ig-grid").innerHTML = posts.filter(img).map(p =>
+        `<a href="${esc(p.permalink)}" target="_blank" rel="noopener"><img src="${esc(img(p))}" loading="lazy" alt="${esc((p.prunedCaption || p.caption || "Instagram post by Goldcrest").slice(0, 140))}"></a>`).join("");
+      if (posts.length) document.getElementById("live-ig").hidden = false;
+    } catch (e) {}
+  }
+
+  if (C.googleMapsKey && C.googlePlaceId) {
+    try {
+      await new Promise((res, rej) => {
+        window.__goldcrestMaps = res;
+        const sc = document.createElement("script");
+        sc.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(C.googleMapsKey)}&v=weekly&loading=async&callback=__goldcrestMaps`;
+        sc.async = true; sc.onerror = rej; document.head.appendChild(sc);
+      });
+      const { Place } = await google.maps.importLibrary("places");
+      const place = new Place({ id: C.googlePlaceId });
+      await place.fetchFields({ fields: ["rating", "userRatingCount", "reviews", "googleMapsURI"] });
+      if (place.userRatingCount) document.querySelectorAll("[data-g=count]").forEach(e => e.textContent = place.userRatingCount);
+      if (place.rating) document.getElementById("lg-rating").textContent = place.rating.toFixed(1);
+      document.getElementById("lg-all").href = place.googleMapsURI || `https://www.google.com/maps/place/?q=place_id:${C.googlePlaceId}`;
+      document.getElementById("lg-write").href = `https://search.google.com/local/writereview?placeid=${encodeURIComponent(C.googlePlaceId)}`;
+      const reviews = (place.reviews || []).filter(r => r.text);
+      document.getElementById("lg-list").innerHTML = reviews.map(r =>
+        `<article class="rv"><div class="stars" aria-label="${r.rating} stars">${"★".repeat(r.rating || 5)}</div><p>${esc(r.text)}</p><footer><b>${esc(r.authorAttribution?.displayName)}</b><span class="tag">${esc(r.relativePublishTimeDescription || "Google review")}</span></footer></article>`).join("");
+      document.getElementById("live-google").hidden = false;
+    } catch (e) {}
+  }
+})();
+</script>
+
+<script>
+(() => {
+  // Pages: each top-level .view is a page; links to #id open the page that holds that id
+  const views = [...document.querySelectorAll(".view")];
+  const cta = document.getElementById("cta-band");
+  const menuBtn = document.getElementById("menu-btn"), mnav = document.getElementById("mnav");
+  const setMenu = open => { mnav.hidden = !open; menuBtn.setAttribute("aria-expanded", open); document.body.style.overflow = open ? "hidden" : ""; };
+  menuBtn.addEventListener("click", () => setMenu(mnav.hidden));
+  const go = (id, push) => {
+    let el = id && document.getElementById(id);
+    if (!el || !el.closest(".view")) { el = document.getElementById("home"); id = "home"; }
+    const view = el.classList.contains("view") ? el : el.closest(".view");
+    const changed = view.hidden;
+    views.forEach(v => { v.hidden = v !== view; });
+    cta.hidden = view.id === "contact";
+    document.querySelectorAll(".mainnav a, .mnav > a").forEach(a => a.getAttribute("href") === "#" + view.id ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+    setMenu(false);
+    if (changed) { view.classList.remove("entering"); void view.offsetWidth; view.classList.add("entering"); }
+    if (el === view) window.scrollTo({ top: 0, behavior: "instant" });
+    else el.scrollIntoView({ behavior: changed ? "instant" : "smooth", block: "start" });
+    if (push) { try { history.pushState(null, "", "#" + id); } catch (e) {} }
+  };
+  document.addEventListener("click", e => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute("href").slice(1);
+    if (!id || !document.getElementById(id)) return;
+    e.preventDefault();
+    go(id, true);
+  });
+  addEventListener("popstate", () => go(location.hash.slice(1), false));
+  go(location.hash.slice(1), false);
+})();
+
+(() => {
+  // Open now / closed, using UK time and the hours shown on the page
+  const st = document.getElementById("open-status");
+  try {
+    const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date()).map(p => [p.type, p.value]));
+    const mins = (+parts.hour) * 60 + (+parts.minute);
+    const hours = { Mon: [480, 1080], Tue: [480, 1080], Wed: [480, 1080], Thu: [480, 1080], Fri: [480, 1080], Sat: [540, 780] }[parts.weekday];
+    const open = hours && mins >= hours[0] && mins < hours[1];
+    st.textContent = open ? "Open now" : "Office closed · 24/7 emergency line open";
+    st.classList.toggle("is-open", !!open);
+  } catch (e) {}
+
+  // Quote builder
+  const jobs = {
+    Plumbing: ["Leak or drip", "Blocked sink, toilet or drain", "New tap, toilet or basin", "Shower fitting or repair", "Radiator or heating", "Unvented hot water cylinder", "Something else"],
+    Bathroom: ["Complete bathroom refit", "Walk-in shower or wet room", "Wall panelling, tiling or flooring", "Accessible bathroom", "Something else"]
+  };
+  const $ = id => document.getElementById(id);
+  const form = $("quote"), job = $("q-job"), msgEl = $("q-msg");
+  const fillJobs = () => { const k = form.querySelector("[name=kind]:checked").value; job.innerHTML = jobs[k].map(j => `<option>${j}</option>`).join(""); };
+  const build = () => {
+    const k = form.querySelector("[name=kind]:checked").value;
+    const name = $("q-name").value.trim(), area = $("q-area").value.trim(), desc = $("q-desc").value.trim();
+    const msg = [
+      `Hi Goldcrest, I'd like a quote please.`,
+      ``,
+      `Job: ${k === "Plumbing" ? "Plumbing" : "Bathroom"} – ${job.value}`,
+      `When: ${$("q-when").value}`,
+      area ? `Area: ${area}` : null,
+      desc ? `\n${desc}` : null,
+      name ? `\nThanks, ${name}` : `\nThanks`
+    ].filter(l => l !== null).join("\n");
+    msgEl.textContent = msg;
+    $("q-wa").href = "https://wa.me/447481105780?text=" + encodeURIComponent(msg);
+    $("q-mail").href = "mailto:goldcrest.plumbing.bathrooms@gmail.com?subject=" + encodeURIComponent("Quote request – " + job.value) + "&body=" + encodeURIComponent(msg);
+  };
+  form.addEventListener("change", e => { if (e.target.name === "kind") fillJobs(); build(); });
+  form.addEventListener("input", build);
+  form.addEventListener("submit", e => e.preventDefault());
+  fillJobs(); build();
+  $("q-copy").addEventListener("click", () => {
+    const b = $("q-copy"), reset = () => setTimeout(() => b.textContent = "Copy message", 1600);
+    const select = () => { const r = document.createRange(); r.selectNodeContents(msgEl); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected"; reset(); };
+    try { navigator.clipboard.writeText(msgEl.textContent).then(() => { b.textContent = "Copied"; reset(); }, select); } catch (e) { select(); }
+  });
+})();
+
+(() => {
+  // Before / after slider
+  const ba = document.getElementById("ba"), r = document.getElementById("ba-range");
+  const setPos = () => ba.style.setProperty("--pos", r.value + "%");
+  r.addEventListener("input", setPos); setPos();
+
+  // Gallery lightbox
+  const lb = document.getElementById("lb"), img = document.getElementById("lb-img"), cap = document.getElementById("lb-cap");
+  const items = [...document.querySelectorAll("#gallery button")];
+  let i = 0;
+  const show = n => { i = (n + items.length) % items.length; const it = items[i].querySelector("img"); img.src = it.src; img.alt = it.alt; cap.textContent = `${i + 1} / ${items.length} · ${items[i].querySelector("span").textContent}`; };
+  items.forEach((b, n) => b.addEventListener("click", () => { show(n); try { lb.showModal(); } catch (e) { lb.setAttribute("open", ""); } }));
+  document.getElementById("lb-prev").onclick = () => show(i - 1);
+  document.getElementById("lb-next").onclick = () => show(i + 1);
+  document.getElementById("lb-close").onclick = () => lb.close();
+  lb.addEventListener("click", e => { if (e.target.classList.contains("lb-stage")) lb.close(); });
+  lb.addEventListener("keydown", e => { if (e.key === "ArrowLeft") show(i - 1); if (e.key === "ArrowRight") show(i + 1); });
+  let x0 = null;
+  lb.addEventListener("touchstart", e => x0 = e.touches[0].clientX, { passive: true });
+  lb.addEventListener("touchend", e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(i + (dx < 0 ? 1 : -1)); x0 = null; });
+})();
+
+(() => {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Header tightens once you scroll
+  const hdr = document.getElementById("hdr");
+  const onScroll = () => hdr.classList.toggle("scrolled", scrollY > 30);
+  addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  // Gold glow follows the pointer across the doorways
+  document.querySelectorAll(".door").forEach(d => {
+    d.addEventListener("pointermove", e => {
+      const r = d.getBoundingClientRect();
+      d.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      d.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
+  });
+
+  // Rating counts up the first time it comes into view
+  const score = document.getElementById("score");
+  if (!reduce && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(([en]) => {
+      if (!en.isIntersecting) return;
+      io.disconnect();
+      const to = parseFloat(score.dataset.to), t0 = performance.now(), dur = 1600;
+      const tick = now => {
+        const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 4);
+        score.textContent = (to * e).toFixed(2);
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }, { threshold: .6 });
+    io.observe(score);
+  }
+
+  // Copy buttons
+  document.querySelectorAll(".copy").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const el = document.getElementById(btn.dataset.copy);
+      const reset = () => setTimeout(() => btn.textContent = "Copy", 1600);
+      const select = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; reset(); };
+      try { navigator.clipboard.writeText(el.textContent.trim()).then(() => { btn.textContent = "Copied"; reset(); }, select); } catch (e) { select(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
