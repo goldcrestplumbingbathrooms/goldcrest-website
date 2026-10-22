@@ -511,15 +511,6 @@ footer .wrap { flex-direction: column; justify-content: center; text-align: cent
 @media (prefers-reduced-motion: no-preference) { .view.entering { animation: viewIn .6s var(--ease) both } @keyframes viewIn { from { opacity: 0; transform: translateY(14px) } } }
 
 /* ---------- Live feeds ---------- */
-.live-g { display: grid; gap: 28px; justify-items: center; text-align: center; margin-bottom: 72px; padding: 40px clamp(16px, 4vw, 40px); border: 1px solid var(--gold-soft); border-radius: 10px; background: var(--panel) }
-.lg-head { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 40px }
-.lg-score { display: flex; align-items: center; gap: 16px; text-align: left }
-.lg-score b { font: 200 3.6rem/1 var(--display); color: var(--gold) }
-.lg-score .stars { color: var(--gold); letter-spacing: 3px }
-.lg-score small { display: block; margin-top: 4px; font: 500 .7rem/1.3 var(--display); letter-spacing: .16em; text-transform: uppercase; color: var(--muted) }
-.lg-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px }
-.live-g .rv-row { width: 100%; text-align: left }
-.lg-attr { font-size: .82rem; color: var(--muted) }
 .live-ig { margin-bottom: 56px }
 .ig-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px }
 .ig-grid a { display: block; aspect-ratio: 1; max-width: 100%; overflow: hidden; border-radius: 6px; border: 1px solid var(--line); transition: border-color .4s }
@@ -644,7 +635,7 @@ footer .wrap { flex-direction: column; justify-content: center; text-align: cent
     <div class="wrap">
       <div class="trust">
         <a href="https://www.trustatrader.com/traders/goldcrest-plumbing-bathrooms-ltd-plumbers-preston-central"><span class="stars" aria-hidden="true">★★★★★</span>4.98 / 5 on TrustATrader · 28 reviews</a>
-        <a href="#reviews"><span class="dot"></span><span data-g="count">60+</span> Google reviews</a>
+        <a href="#reviews"><span class="dot"></span>60+ Google reviews</a>
         <span><span class="dot"></span>24/7 emergencies</span>
         <span><span class="dot"></span>G3 qualified</span>
         <span><span class="dot"></span>Fully insured</span>
@@ -721,7 +712,7 @@ footer .wrap { flex-direction: column; justify-content: center; text-align: cent
       <div class="head reveal">
         <p class="label rule">Reviews</p>
         <h2>Rated <b>4.98 out of 5</b></h2>
-        <p>On TrustATrader, with <span data-g="count">60+</span> reviews on Google.</p>
+        <p>On TrustATrader, with 60+ reviews on Google.</p>
       </div>
       <div class="rv-row">
         <article class="rv reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Excellent attention to detail for fitting a new bathroom. No problems from start to finish. Clear visualisation and on time with the delivery and completion. Would highly recommend.</p><footer><b>Georgia M.</b><span class="tag">Shower installation</span></footer></article>
@@ -933,19 +924,9 @@ footer .wrap { flex-direction: column; justify-content: center; text-align: cent
           <p>Real reviews from our Google Business profile.</p>
         </div>
         <div class="badges reveal">
-          <div class="badge"><b data-g="count">60+</b><span>Google reviews</span></div>
+          <div class="badge"><b>60+</b><span>Google reviews</span></div>
           <a class="badge" href="#ratings"><b>4.98</b><span>TrustATrader · 28 reviews</span></a>
         </div>
-      </div>
-
-      <div class="live-g" id="live-google" hidden>
-        <div class="lg-head">
-          <div class="lg-score"><b id="lg-rating">5.0</b><div><span class="stars" aria-hidden="true">★★★★★</span><small><span data-g="count"></span> reviews on Google</small></div></div>
-          <div class="lg-links"><a class="btn btn-line" id="lg-all" href="#" target="_blank" rel="noopener">See all on Google</a><a class="btn" id="lg-write" href="#" target="_blank" rel="noopener">Leave us a review</a></div>
-        </div>
-        <p class="label rule">Latest Google reviews</p>
-        <div class="rv-row" id="lg-list"></div>
-        <p class="lg-attr">Reviews from Google, loaded live.</p>
       </div>
 
       <figure class="feature reveal" style="margin-inline: 0">
@@ -1145,17 +1126,15 @@ footer .wrap { flex-direction: column; justify-content: center; text-align: cent
 </script>
 
 <script>
-  // Live feeds. Fill these in to switch on live Google reviews and Instagram posts.
+  // Live Instagram feed for the Our work page.
   window.GOLDCREST = {
-    googleMapsKey: "",   // Google Maps JavaScript API key, restricted to the website's address
-    googlePlaceId: "",   // Google Place ID for Goldcrest Plumbing & Bathrooms
-    beholdFeedUrl: "https://feeds.behold.so/resTX6wrowlA2DJkb5jc"    // JSON feed URL from behold.so for @goldcrest.ltd
+    beholdFeedUrl: "https://feeds.behold.so/resTX6wrowlA2DJkb5jc"   // JSON feed URL from behold.so for @goldcrest.ltd
   };
 </script>
 
 <script>
 (async () => {
-  // Live Google reviews and Instagram posts (only runs once the settings above are filled in)
+  // Live Instagram posts (only runs once the feed URL above is filled in)
   const C = window.GOLDCREST || {};
   const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -1170,27 +1149,6 @@ footer .wrap { flex-direction: column; justify-content: center; text-align: cent
     } catch (e) {}
   }
 
-  if (C.googleMapsKey && C.googlePlaceId) {
-    try {
-      await new Promise((res, rej) => {
-        window.__goldcrestMaps = res;
-        const sc = document.createElement("script");
-        sc.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(C.googleMapsKey)}&v=weekly&loading=async&callback=__goldcrestMaps`;
-        sc.async = true; sc.onerror = rej; document.head.appendChild(sc);
-      });
-      const { Place } = await google.maps.importLibrary("places");
-      const place = new Place({ id: C.googlePlaceId });
-      await place.fetchFields({ fields: ["rating", "userRatingCount", "reviews", "googleMapsURI"] });
-      if (place.userRatingCount) document.querySelectorAll("[data-g=count]").forEach(e => e.textContent = place.userRatingCount);
-      if (place.rating) document.getElementById("lg-rating").textContent = place.rating.toFixed(1);
-      document.getElementById("lg-all").href = place.googleMapsURI || `https://www.google.com/maps/place/?q=place_id:${C.googlePlaceId}`;
-      document.getElementById("lg-write").href = `https://search.google.com/local/writereview?placeid=${encodeURIComponent(C.googlePlaceId)}`;
-      const reviews = (place.reviews || []).filter(r => r.text);
-      document.getElementById("lg-list").innerHTML = reviews.map(r =>
-        `<article class="rv"><div class="stars" aria-label="${r.rating} stars">${"★".repeat(r.rating || 5)}</div><p>${esc(r.text)}</p><footer><b>${esc(r.authorAttribution?.displayName)}</b><span class="tag">${esc(r.relativePublishTimeDescription || "Google review")}</span></footer></article>`).join("");
-      document.getElementById("live-google").hidden = false;
-    } catch (e) {}
-  }
 })();
 </script>
 
